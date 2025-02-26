@@ -3,9 +3,7 @@ import RecipeController from "../controllers/recipeController";
 
 const router = Router();
 
-router.get("/recipes", (req, res, next) => {
-  RecipeController.getAllRecipes(req, res, next).catch(next);
-});
+ 
 router.get("/recipes/:id", (req, res, next) => {
   RecipeController.getRecipe(req, res, next).catch(next);
 });
